@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form1-Order</title>
+</head>
+<body>
+<h4>Заполните форму для заказа суши:</h4>
+<form>
+    <div>
+        <label>
+            <span>Ваше имя:</span>
+            <input type="text" id="name" name="userName" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Адрес:</span>
+            <input type="text" id="address"
+                   name="userAddress" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Телефон:</span>
+            <input type="text" id="phone"
+                   name="userPhone" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Email:</span>
+            <input type="email" id="email"
+                   name="userEmail" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Количество палочек:</span>
+            <input type="number" name="userRating"
+                   id="rating" min="1" max="100"
+                   step="1">
+        </label>
+        <fieldset>
+            <legend>Вид палочек:</legend>
+            <ul>
+                <li>
+                    <label>
+                        <span>Учебные</span>
+                        <input type="radio" id="study"
+                               name="type" value="study" />
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>Обычные</span>
+                        <input
+                                type="radio"
+                                id="simple"
+                                name="type"
+                                value="simple"
+                                checked
+                        />
+                    </label>
+            </ul>
+        </fieldset>
+    </div>
+    <div>
+        <label>
+            <span>Выберите суши:</span>
+            <select id="nameOfSushi" name="nameOfSushi">
+                <option>Филадельфия</option>
+                <option>Унаги маки</option>
+                <option>Сяке маки</option>
+                <option>Калифорния</option>
+            </select>
+        </label>
+    </div>
+<div>
+    <label>
+    <span>Нужно ли класть салфетки?</span>
+        <input type="checkbox" id="napkins" name="napkins" />
+</label>
+</div>
+    <div>
+        <label>Дополнительный комментарий</label>
+        <textarea id="message" name="message" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+        <button type="submit">Отправить заказ</button>
+    </div>
+</form>
+
+<h4> Введите данные для регистрации в игре:</h4>
+<form>
+    <div>
+        <label>
+            <span>Ник:</span>
+            <input type="text" id="name" name="userName" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Email:</span>
+            <input type="email" id="email"
+                   name="userEmail" />
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Дата рождения:</span>
+            <input type="date" name="birthday"
+                   id="userBirthday">
+        </label>
+    </div>
+    <fieldset>
+        <legend>Пол:</legend>
+        <ul>
+            <li>
+                <label>
+                    <span>М</span>
+                    <input type="radio" id="male"
+                           name="type" value="male" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span>Ж</span>
+                    <input
+                            type="radio"
+                            id="female"
+                            name="type"
+                            value="female"
+                            checked
+                    />
+                </label>
+        </ul>
+    </fieldset>
+    <div>
+        <span>Страна:</span>
+        <input type="text" name="country" id="UserCountry"
+               list="UserCountryList" />
+        <datalist id="UserCountryList">
+            <option>Russia</option>
+            <option>USA</option>
+            <option>China</option>
+            <option>Germany</option>
+            <option>Ukraine</option>
+            <option>France</option>
+        </datalist>
+    </div>
+
+    <div>
+        <label>Тип героя</label>
+        <textarea placeholder="Опишите своего героя" id="hero" name="hero" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+        <label>
+            <span>Игровой опыт:</span>
+            <input type="number" name="userRating"
+                   id="rating" min="1" max="100"
+                   step="1">
+        </label>
+    </div>
+    <div>
+        <button type="submit">Зарегистрироваться</button>
+    </div>
+</form>
+</body>
+</html>
