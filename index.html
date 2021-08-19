@@ -6,44 +6,48 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form1-Order</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h4>Заполните форму для заказа суши:</h4>
+
 <form>
+    <h2>Заполните форму для заказа суши:</h2>
     <div>
         <label>
             <span>Ваше имя:</span>
-            <input type="text" id="name" name="userName" />
+            <input type="text" id="clientName" name="clientName" />
         </label>
     </div>
     <div>
         <label>
             <span>Адрес:</span>
             <input type="text" id="address"
-                   name="userAddress" />
+                   name="clientAddress" />
         </label>
     </div>
     <div>
         <label>
             <span>Телефон:</span>
             <input type="text" id="phone"
-                   name="userPhone" />
+                   name="clientPhone" />
         </label>
     </div>
     <div>
         <label>
             <span>Email:</span>
-            <input type="email" id="email"
-                   name="userEmail" />
+            <input type="email" id="clientEmail"
+                   name="clientEmail" />
         </label>
     </div>
     <div>
         <label>
             <span>Количество палочек:</span>
-            <input type="number" name="userRating"
-                   id="rating" min="1" max="100"
+            <input type="number" name="sticks"
+                   id="sticks" min="1" max="100"
                    step="1">
         </label>
+    </div>
+    <div>
         <fieldset>
             <legend>Вид палочек:</legend>
             <ul>
@@ -86,16 +90,19 @@
 </label>
 </div>
     <div>
-        <label>Дополнительный комментарий</label>
+        <label>
+            Дополнительный комментарий:
         <textarea id="message" name="message" cols="30" rows="5"></textarea>
+        </label>
     </div>
     <div>
         <button type="submit">Отправить заказ</button>
     </div>
 </form>
 
-<h4> Введите данные для регистрации в игре:</h4>
+
 <form>
+    <h2> Введите данные для регистрации в игре:</h2>
     <div>
         <label>
             <span>Ник:</span>
@@ -116,33 +123,35 @@
                    id="userBirthday">
         </label>
     </div>
+    <div>
     <fieldset>
         <legend>Пол:</legend>
         <ul>
             <li>
                 <label>
-                    <span>М</span>
+                    <span>Мужской</span>
                     <input type="radio" id="male"
                            name="type" value="male" />
                 </label>
             </li>
             <li>
                 <label>
-                    <span>Ж</span>
+                    <span>Женский</span>
                     <input
                             type="radio"
                             id="female"
                             name="type"
                             value="female"
-                            checked
                     />
                 </label>
         </ul>
     </fieldset>
-    <div>
+    </div>
+    <div><label>
         <span>Страна:</span>
         <input type="text" name="country" id="UserCountry"
                list="UserCountryList" />
+    </label>
         <datalist id="UserCountryList">
             <option>Russia</option>
             <option>USA</option>
@@ -151,11 +160,14 @@
             <option>Ukraine</option>
             <option>France</option>
         </datalist>
+
     </div>
 
     <div>
-        <label>Тип героя</label>
+        <label>
+            Тип героя:
         <textarea placeholder="Опишите своего героя" id="hero" name="hero" cols="30" rows="5"></textarea>
+        </label>
     </div>
     <div>
         <label>
